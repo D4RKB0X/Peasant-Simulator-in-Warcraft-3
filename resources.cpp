@@ -1,21 +1,6 @@
-#include <iosteam>
-
-template <typename T>
-T getInput(const std::string& prompt) {
-    T value;
-    while (true) {
-        std::cout << prompt;
-        std::cin >> value;
-
-        if (std::cin.fail()) {
-            std::cin.clear();
-            std::cin.ignore(1000, '\n');
-            std::cout << "\nInvalid input, try again.\n";
-            continue;
-        }
-        return value;
-    }
-}
+#include "resources.h"
+#include "utils.h"
+#include <iostream>
 
 void resources() {
     float wood, gold;
@@ -27,16 +12,9 @@ void resources() {
         if (gold < 385) {
             std::cout << "\nWe need more gold!\n";
             gold = getInput<float>("Enter the gold you have: ");
-        }
-
-        else if (wood < 205) {
+        } else if (wood < 205) {
             std::cout << "\nWe need more lumber!\n";
             wood = getInput<float>("Enter the lumber you have: ");
-        }
-        
-        else {
-            std::cout << "Error!";
-            break;
         }
     }
     std::cout << "\n------------------------------------------------------------------\n";
