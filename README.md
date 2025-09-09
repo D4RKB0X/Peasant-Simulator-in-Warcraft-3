@@ -1,4 +1,4 @@
-Still in Demo mode :)
+Still in Demo mode
 
 🏰 Peasant Simulator in Warcraft III
 
