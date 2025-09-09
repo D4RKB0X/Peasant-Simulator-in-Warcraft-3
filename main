@@ -1,8 +1,5 @@
 #include <iostream>
 #include <ctime>
-#include <chrono>
-#include <thread>
-#include <cmath>
 
 template <typename T>
 T getInput(const std::string& prompt) {
