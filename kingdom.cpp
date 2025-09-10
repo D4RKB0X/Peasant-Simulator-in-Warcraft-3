@@ -6,7 +6,7 @@
 
 void kingdom() {
     int choosing;
-    float length, width, acre;
+    double length, width, acre;
 
     std::cout << "Enter the kingdom you want to build your Town Hall: \n"
               << "[1] - Alterac\n[2] - Dalaran\n[3] - Gilneas\n"
