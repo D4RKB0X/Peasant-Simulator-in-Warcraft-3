@@ -1,5 +1,6 @@
 #include "resources.h"
 #include "kingdom.h"
+#include "buildings.h"
 #include "utils.h"
 #include <iostream>
 #include <ctime>
@@ -20,6 +21,8 @@ int main() {
             if (num == ran) {
                 std::cout << "\n---------------------------\n";
                 std::cout << "You've got the Town Hall!\n";
+
+                buildings();
             } else if (num < ran) {
                 std::cout << "Too Low!\n";
             } else {
